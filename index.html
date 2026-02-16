@@ -51,9 +51,91 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="modile-menu">
+          <div class="container modile-menu-container">
+            <button class="mobile-menu-close">
+              <svg class="mobile-menu-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mobile-menu-nav">
+              <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                  <a class="mobile-nav-link current" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li><a class="mobile-nav-link" href="#">Portfolio</a></li>
+                <li><a class="mobile-nav-link" href="#">Contacts</a></li>
+              </ul>
+            </nav>
+            <address class="mobile-contacts">
+              <ul class="mobile-contacts-list">
+                <li class="mobile-contacts-link">
+                  <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobile-contacts-link">
+                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+              </ul>
+              <div class="mobile-social-container">
+                <ul class="mobile-social-list">
+                  <li class="mobile-social-item">
+                    <a
+                      href="https://www.instagram.com"
+                      class="mobile-social-icons"
+                      target="_blank"
+                    >
+                      <svg class="social-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a
+                      href="https://www.twitter.com"
+                      class="mobile-social-icons"
+                      target="_blank"
+                    >
+                      <svg class="social-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a
+                      href="https://www.facebook.com"
+                      class="mobile-social-icons"
+                      target="_blank"
+                    >
+                      <svg class="social-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="mobile-social-item">
+                    <a
+                      href="https://www.linkedin.com"
+                      class="mobile-social-icons"
+                      target="_blank"
+                    >
+                      <svg class="social-icons" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </address>
+          </div>
+        </div>
       </div>
     </header>
-
     <main class="page-main">
       <section class="hero-section">
         <div class="container">
@@ -125,6 +207,7 @@
               <img
                 src="./images/markguerrero.jpg"
                 alt="Mark Guerrero"
+                srcset="./images/mark-guerrero@2x.jpg"
                 width="264"
                 height="260"
               />
@@ -183,6 +266,7 @@
               <img
                 src="./images/tomford.jpg"
                 alt="Tom Ford"
+                srcset="./images/tom-ford@2x.jpg"
                 width="264"
                 height="260"
               />
@@ -241,6 +325,7 @@
               <img
                 src="./images/camilagarcia.jpg"
                 alt="Camila Garcia"
+                srcset="./images/camila-garcia@2x.jpg"
                 width="264"
                 height="260"
               />
@@ -299,6 +384,7 @@
               <img
                 src="./images/danielwilson.jpg"
                 alt="Daniel Wilson"
+                srcset="./images/daniel-wilson@2x.jpg"
                 width="264"
                 height="260"
               />
@@ -367,19 +453,33 @@
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-
-                <img
-                  src="./images/bankingapp.jpg"
-                  alt="banking app"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/bankingapp.jpg     1x,
+                      ./images/banking-app@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/banking-app-m.jpg    1x,
+                      ./images/banking-app-m@2x.jpg 2x
+                    "
+                  />
+                  <img 
+                  class="portfolio-img"
+                    src="./images/banking-app-m.jpg"
+                    alt="banking app"
+                  />
+                </picture>
               </div>
               <div class="portfolio-box">
                 <h3 class="portfolio-title">Banking App</h3>
                 <p class="portfolio-text">App</p>
               </div>
-            </li>
+            </i>
             <li class="portfolio-item">
               <div class="portfolio-overlay">
                 <p class="text-overlay">
@@ -387,13 +487,27 @@
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-
-                <img
-                  src="./images/Cashlesscayment.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/Cashlesscayment.jpg     1x,
+                      ./images/cashless-payment@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/cashless-payment-m.jpg    1x,
+                      ./images/cashless-payment-m@2x.jpg 2x
+                    "
+                  />
+                  <img 
+                  class="portfolio-img"
+                    src="./images/cashless-payment-m.jpg "
+                    alt="Cashless Payment"
+                  />
+                </picture>
               </div>
               <div class="portfolio-box">
                 <h3 class="portfolio-title">Cashless Payment</h3>
@@ -407,13 +521,27 @@
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-
-                <img
-                  src="./images/meditationapp.jpg"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/meditationapp.jpg     1x,
+                      ./images/meditation-app@2X.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/meditation-app-m.jpg    1x,
+                      ./images/meditation-app-m@2x.jpg 2x
+                    "
+                  />
+                  <img 
+                  class="portfolio-img"
+                    src="./images/meditation-app-m.jpg "
+                    alt="Meditation App"
+                  />
+                </picture>
               </div>
               <div class="portfolio-box">
                 <h3 class="portfolio-title">Meditation App</h3>
@@ -427,13 +555,27 @@
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-
-                <img
-                  src="./images/taxiservice.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/taxiservice.jpg     1x,
+                      ./images/taxi-service@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/taxi-service-m.jpg    1x,
+                      ./images/taxi-service-m@2x.jpg 2x
+                    "
+                  />
+                  <img 
+                  class="portfolio-img"
+                    src="./images/taxi-service-m.jpg "
+                    alt="Taxi Service"
+                  />
+                </picture>
               </div>
               <div class="portfolio-box">
                 <h3 class="portfolio-title">Taxi Service</h3>
@@ -447,13 +589,27 @@
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-
-                <img
-                  src="./images/screenillustrations.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/screenillustrations.jpg     1x,
+                      ./images/screen-illustrations@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/screen-illustrations-m.jpg    1x,
+                      ./images/screen-illustrations-m@2x.jpg 2x
+                    "
+                  />
+                  <img 
+                  class="portfolio-img"
+                    src="./images/screen-illustrations-m.jpg"
+                    alt="Screen Illustrations"
+                  />
+                </picture>
               </div>
               <div class="portfolio-box">
                 <h3 class="portfolio-title">Screen Illustrations</h3>
@@ -467,13 +623,27 @@
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
-
-                <img
-                  src="./images/onlinecourses.jpg"
-                  alt="Online Courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/onlinecourses.jpg     1x,
+                      ./images/online-courses@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/online-courses-m.jpg 1x,
+                      ./images/online-courses-m@2x.jpg 2x
+                    "
+                  />
+                  <img 
+                  class="portfolio-img"
+                    src="./images/online-courses-m.jpg"
+                    alt="Online Courses"
+                  />
+                </picture>
               </div>
               <div class="portfolio-box">
                 <h3 class="portfolio-title">Online Courses</h3>
@@ -488,6 +658,7 @@
     <footer class="page-footer">
       <div class="container">
         <div class="footer-page-container">
+          <div class="footer-part-tab">
           <div class="footer-container">
             <a class="logo footer-logo" href="./index.html"
               >Web<span class="logo-part">Studio</span></a
@@ -541,6 +712,7 @@
                 ></a>
               </li>
             </ul>
+          </div>
           </div>
           <div class="footer-subscribe">
             <p class="subscribe-text">Subscribe</p>
@@ -646,8 +818,7 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-policy" href=""> &nbsp;Privacy Policy</a></label
+              I accept the terms and conditions of the<a class="privacy-policy" href="">&nbsp;Privacy Policy</a></label
             >
           </div>
           <button class="form-button" type="submit">Send</button>
