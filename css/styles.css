@@ -319,9 +319,17 @@ button {
 }
 .mobile-contacts-phone {
   color: #4d5ae5;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .mobile-contacts-email {
   color: #434455;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .mobile-social-list {
   display: flex;
@@ -420,8 +428,8 @@ button {
   color: #fff;
 }
 @media screen and (min-width: 768px) {
-  .hero-section .container {
-    max-width: 768px;
+  .container {
+    min-width: 768px;
   }
   .hero-section {
     padding-top: 112px;
@@ -448,6 +456,9 @@ button {
   }
 }
 @media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
   .hero-section {
     padding-top: 188px;
     padding-bottom: 188px;
@@ -468,9 +479,11 @@ button {
   }
 }
 /* Feature-section */
-.features-section .container {
+.container {
   width: 100%;
   max-width: 320px;
+}
+.features-section {
   padding: 96px 16px;
 }
 .features-list {
@@ -511,8 +524,10 @@ button {
   color: #434455;
 }
 @media screen and (min-width: 768px) {
-  .features-section .container {
+  .container {
     min-width: 768px;
+  }
+  .features-section {
     padding: 76px 16px 96px 16px;
   }
   .features-list {
@@ -532,8 +547,10 @@ button {
   }
 }
 @media screen and (min-width: 1158px) {
-  .features-section .container {
+  .container {
     min-width: 1158px;
+  }
+  .features-section {
     padding: 120px 0;
   }
   .features-list {
@@ -579,14 +596,14 @@ button {
   }
 }
 /* team-section */
-.team-section .container {
+.container {
   width: 100%;
   max-width: 320px;
-  padding: 96px 28px;
-  margin: 0 auto;
 }
 .team-section {
   background-color: #f4f4fd;
+  padding: 96px 28px;
+  margin: 0 auto;
 }
 .main-title {
   font-weight: 700;
@@ -663,9 +680,11 @@ button {
   fill: #f4f4fd;
 }
 @media screen and (min-width: 768px) {
-  .team-section .container {
+  .container {
     width: 100%;
     min-width: 768px;
+  }
+  .team-section {
     padding: 96px 108px;
     margin: 0 auto;
   }
@@ -679,9 +698,11 @@ button {
   }
 }
 @media screen and (min-width: 1158px) {
-  .team-section .container {
+  .container {
     width: 100%;
     min-width: 1158px;
+  }
+  .team-section {
     padding: 120px 0;
     display: flex;
     align-items: center;
@@ -699,7 +720,7 @@ button {
   }
 }
 /* portfolio section */
-.portfolio-section .container {
+.container {
   width: 100%;
   max-width: 320px;
 }
@@ -790,7 +811,7 @@ button {
   transform: translatey(0);
 }
 @media screen and (min-width: 768px) {
-  .portfolio-section .container {
+  .container {
     width: 100%;
     min-width: 768px;
   }
@@ -814,7 +835,7 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
-  .portfolio-section .container {
+  .container {
     min-width: 1158px;
   }
   .portfolio-section {
@@ -837,7 +858,7 @@ button {
   }
 }
 /* Page footer */
-.page-footer .container {
+.container {
   width: 100%;
   max-width: 320px;
 }
@@ -941,7 +962,7 @@ button {
   margin-bottom: 16px;
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #2e2f42;
@@ -990,7 +1011,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
-  .page-footer .container {
+  .container {
     min-width: 768px;
   }
   .page-footer {
@@ -998,12 +1019,11 @@ button {
   }
   .footer-page-container {
     display: flex;
-  }
-  .footer-part-tab {
-    display: flex;
     flex-direction: row;
-    gap: 24px;
+    flex-wrap: wrap;
     align-items: baseline;
+    justify-content: flex-start;
+    gap: 72px 24px;
   }
   .footer-container {
     display: block;
@@ -1038,12 +1058,13 @@ button {
     margin: 0;
   }
   .footer-user-field {
+    width: 264px;
     margin-bottom: 0;
     margin-right: 24px;
   }
 }
 @media screen and (min-width: 1158px) {
-  .page-footer .container {
+  .container {
     min-width: 1158px;
   }
   .page-footer {
@@ -1058,10 +1079,13 @@ button {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    gap: 80px;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0;
   }
-  .footer-part-tab {
-    gap: 120px;
+  .footer-container {
+    margin-right: 120px;
   }
   .footer-subscribe {
     margin-left: 80px;
