@@ -479,10 +479,6 @@ button {
   }
 }
 /* Feature-section */
-.container {
-  width: 100%;
-  max-width: 320px;
-}
 .features-section {
   padding: 96px 16px;
 }
@@ -596,10 +592,6 @@ button {
   }
 }
 /* team-section */
-.container {
-  width: 100%;
-  max-width: 320px;
-}
 .team-section {
   background-color: #f4f4fd;
   padding: 96px 28px;
@@ -681,7 +673,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 100%;
     min-width: 768px;
   }
   .team-section {
@@ -699,7 +690,6 @@ button {
 }
 @media screen and (min-width: 1158px) {
   .container {
-    width: 100%;
     min-width: 1158px;
   }
   .team-section {
@@ -720,10 +710,6 @@ button {
   }
 }
 /* portfolio section */
-.container {
-  width: 100%;
-  max-width: 320px;
-}
 .portfolio-section {
   padding: 96px 16px;
 }
@@ -858,10 +844,6 @@ button {
   }
 }
 /* Page footer */
-.container {
-  width: 100%;
-  max-width: 320px;
-}
 .page-footer {
   background-color: #2e2f42;
   padding: 96px 16px;
