@@ -521,7 +521,7 @@ button {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 72px 8px;
+    gap: 72px 24px;
   }
   .features-item {
     display: flex;
@@ -529,7 +529,6 @@ button {
     justify-content: flex-start;
     flex-direction: column;
     width: calc((100% - 24px) / 2);
-    width: 356px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -551,7 +550,6 @@ button {
     justify-content: flex-start;
     flex-direction: column;
     gap: 8px;
-    width: 264px;
     width: calc((100% - 72px) / 4);
   }
   .container-features-icon {
@@ -565,6 +563,7 @@ button {
     align-items: center;
   }
   .features-title {
+    text-align: left;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -670,15 +669,14 @@ button {
     padding: 96px 108px;
     margin: 0 auto;
   }
-}
-.team-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: calc((100% - 24)) / 2;
-  align-items: center;
-  justify-content: center;
-  gap: 64px 24px;
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 64px 24px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .team-section .container {
@@ -1097,7 +1095,7 @@ button {
   visibility: hidden;
   pointer-events: none;
   transition:
-    opaciti 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
