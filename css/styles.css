@@ -526,6 +526,9 @@ button {
   .features-section {
     padding: 76px 16px 96px 16px;
   }
+  .features-title {
+    text-align: left;
+  }
   .features-list {
     display: flex;
     flex-direction: row;
@@ -802,7 +805,8 @@ button {
     min-width: 768px;
   }
   .portfolio-section {
-    padding: 96px;
+    padding: 96px 108px;
+    margin: 0;
   }
   .portfolio-list {
     flex-direction: row;
@@ -997,7 +1001,7 @@ button {
     min-width: 768px;
   }
   .page-footer {
-    padding: 96px 0;
+    padding: 96px 108px;
   }
   .footer-page-container {
     display: flex;
